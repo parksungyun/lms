@@ -259,87 +259,43 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-    <div class="col">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title fw-bold fs-4"><a href="lms-student-homework.html" class="link-dark">과제</a></h5>
-          <hr class="mt-1 mb-1">
-          <table class="table table-border">
-            <thead>
-              <tr>
-                <th>No.</th>
-                <th class="col-6">제목</th>
-                <th class="col-1 text-center">작성자</th>
-                <th class="col-1 text-center">등록일</th>
-                <th class="col-1 text-center">종료일</th>
-                <th class="col-1 text-center">제출</th>
-                <th class="col-1 text-center">제출 상황</th>
-                <th class="col-1 text-center">제출 시간</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td><a href="lms-s-hw-post.html" class="link-dark">Lorem ipsum dolor sit.</a></td>
-                <td class="col-1 text-center p-2">안경태</td>
-                <td class="col-1 text-center">2023-09-01</td>
-                <td class="col-1 text-center">2023-09-10</td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-primary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-submit.html';">제출 하기</button></td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-secondary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-check.html';">제출 확인</button></td>
-                <td class="col-1 text-center">yyyy.mm.dd.hh:mm:ss</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td><a href="lms-s-hw-post.html" class="link-dark">Lorem ipsum dolor sit.</a></td>
-                <td class="col-1 text-center p-2">안경태</td>
-                <td class="col-1 text-center">2023-08-16</td>
-                <td class="col-1 text-center">2023-08-30</td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-primary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-submit.html';">제출 하기</button></td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-secondary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-check.html';">제출 확인</button></td>
-                <td class="col-1 text-center text-danger">2023.09.01.13:17:02</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td><a href="lms-s-hw-post.html" class="link-dark">Lorem ipsum dolor sit.</a></td>
-                <td class="col-1 text-center p-2">안경태</td>
-                <td class="col-1 text-center">2023-08-04</td>
-                <td class="col-1 text-center">2023-08-15</td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-primary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-submit.html';">제출 하기</button></td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-secondary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-check.html';">제출 확인</button></td>
-                <td class="col-1 text-center text-danger">2023.08.15.23:58:12</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td><a href="lms-s-hw-post.html" class="link-dark">Lorem ipsum dolor sit.</a></td>
-                <td class="col-1 text-center p-2">안경태</td>
-                <td class="col-1 text-center">2023-08-03</td>
-                <td class="col-1 text-center">2023-08-09</td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-primary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-submit.html';">제출 하기</button></td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-secondary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-check.html';">제출 확인</button></td>
-                <td class="col-1 text-center text-danger">2023.08.10.01:11:23</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td><a href="lms-s-hw-post.html" class="link-dark">Lorem ipsum dolor sit.</a></td>
-                <td class="col-1 text-center p-2">안경태</td>
-                <td class="col-1 text-center">2023-08-01</td>
-                <td class="col-1 text-center">2023-08-03</td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-primary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-submit.html';">제출 하기</button></td>
-                <td class="col-1 text-center"><button type="button" class="btn btn-secondary pb-0 pt-0" style="font-size:small" onclick="location.href='lms-s-hw-check.html';">제출 확인</button></td>
-                <td class="col-1 text-center">2023.08.02.17:23:33</td>
-              </tr>
-            </tbody>
-          </table>
+
+    <div class="d-flex justify-content-between">
+      <div class="pagetitle mb-3">
+        <h1>HTML</h1>
+      </div><!-- End Page Title -->
+    </div>
+
+    <section class="section dashboard">
+      <div class="row">
+        <!-- Reports -->
+        <div class="card">
+
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-4"><a href="lms-student-board.html" class="link-dark">과제 제출</a></h5>
+              <div class="d-flex flex-column">
+                <div class="d-flex mb-1 mt-3">
+                  <h4 class="fw-bold ps-3">피라미드 만들기</h4>
+                </div>
+                  <div class="col-12 p-3 border-bottom border-top">
+                    <div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione tenetur pariatur molestiae beatae corrupti illo, vel, amet delectus obcaecati aspernatur suscipit voluptas doloribus veniam magni assumenda impedit deserunt sint.</p>
+                    </div>
+                    <div class="col-12 ps-3 p-2 border d-flex mt-2">
+                      <div class="me-4 border-end pe-3"><span class="fw-bold">첨부파일</span></div>
+                      <div><a href="" class="text-dark">파일.pdf<i class="ri-download-line fw-bold ps-2"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="d-flex mt-3 justify-content-center gap-2">
+                    <button type="submit" class="btn btn-primary" onclick="location.href='lms-s-hw-submit.html';">다시 제출</button>
+                    <button type="button" class="btn btn-secondary" onclick="location.href='lms-student-homework.html';">취소</button>
+                  </div>
+              </div>
+          </div>
         </div>
       </div>
-    </div><!-- End Recent Sales -->
-    <div class="d-flex justify-content-center gap-1">
-      <button type="button" class="btn btn-primary"><i class="ri-arrow-drop-left-line"></i></button>
-      <button type="button" class="btn btn-primary">1</button>
-      <button type="button" class="btn btn-primary">2</button>
-      <button type="button" class="btn btn-primary">3</button>
-      <button type="button" class="btn btn-primary"><i class="ri-arrow-drop-right-line"></i></button>
-    </div>
+    </section>
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
