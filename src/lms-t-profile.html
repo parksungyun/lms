@@ -203,7 +203,10 @@
               <!-- Bordered Tabs -->
               <ul class="nav nav-tabs nav-tabs-bordered">
                 <li class="nav-item">
-                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-edit">개인정보수정</button>
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#class-history">강의이력</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">개인정보수정</button>
                 </li>
                 <li class="nav-item">
                   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">비밀번호수정</button>
@@ -211,7 +214,65 @@
               </ul>
               <div class="tab-content pt-2">
 
-                <div class="tab-pane fade show active profile-edit pt-3" id="profile-edit">
+                <div class="tab-pane fade show active profile-edit" id="class-history">
+                  <table class="table table-border pb-2">
+                    <thead>
+                      <tr>
+                      <th class="col-1 text-center">No</th>
+                      <th class="col-3 text-center">클래스명</th>
+                      <th class="col-2 text-center">강의명</th>
+                      <th class="col-2 text-center">기간</th>
+                      <th class="col-2 text-center">진행여부</th>
+                      <th class="col-2 text-center">강의실 바로가기</th>
+                      </tr>
+                    </thead>
+        
+                    <tbody>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">스마트 UI/UX 디지털 디자인 2회차</td>
+                        <td class="text-center">HTML</td>
+                        <td class="text-center">2023.06.07 ~ 2023.12.29</td>
+                        <td class="text-center"><span class="badge bg-primary w-50">진행중</span></td>
+                        <td class="text-center"><button class="btn btn-primary pt-0 pb-0" onclick="location.href='lms-t-subject';">바로가기</button></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">스마트 UI/UX 디지털 디자인 2회차</td>
+                        <td class="text-center">HTML</td>
+                        <td class="text-center">2023.06.07 ~ 2023.12.29</td>
+                        <td class="text-center"><span class="badge bg-primary w-50">진행중</span></td>
+                        <td class="text-center"><button class="btn btn-primary pt-0 pb-0" onclick="location.href='lms-t-subject';">바로가기</button></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">스마트 UI/UX 디지털 디자인 2회차</td>
+                        <td class="text-center">HTML</td>
+                        <td class="text-center">2023.06.07 ~ 2023.12.29</td>
+                        <td class="text-center"><span class="badge bg-secondary w-50">진행 완료</span></td>
+                        <td class="text-center"><button class="btn btn-primary pt-0 pb-0" onclick="location.href='lms-t-subject';">바로가기</button></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">스마트 UI/UX 디지털 디자인 2회차</td>
+                        <td class="text-center">HTML</td>
+                        <td class="text-center">2023.06.07 ~ 2023.12.29</td>
+                        <td class="text-center"><span class="badge bg-secondary w-50">진행 완료</span></td>
+                        <td class="text-center"><button class="btn btn-primary pt-0 pb-0" onclick="location.href='lms-t-subject';">바로가기</button></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td class="text-center">스마트 UI/UX 디지털 디자인 2회차</td>
+                        <td class="text-center">HTML</td>
+                        <td class="text-center">2023.06.07 ~ 2023.12.29</td>
+                        <td class="text-center"><span class="badge bg-secondary w-50">진행 완료</span></td>
+                        <td class="text-center"><button class="btn btn-primary pt-0 pb-0" onclick="location.href='lms-t-subject';">바로가기</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="tab-pane fade show profile-edit pt-3" id="profile-edit">
                   
                   <!-- Profile Edit Form -->
                   <form>
