@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Users / Profile - NiceAdmin Bootstrap Template</title>
+  <title>LMS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="../lms_assets/img/favicon.png" rel="icon">
+  <link href="../img/logo/y_favicon.png" rel="icon">
   <link href="../lms_assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -41,7 +41,6 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
@@ -57,7 +56,6 @@
 
   </header><!-- End Header -->
 
-<!-- ======= Sidebar ======= -->
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar" style="width: max-content;">
 
@@ -70,10 +68,10 @@
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#class1-nav" data-bs-toggle="collapse" href="#">
+        <a class="nav-link " data-bs-target="#class1-nav" data-bs-toggle="collapse" href="#">
           <span style="font-size: small;" class="me-2">스마트 UI/UX 디지털 디자인 2회차</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
-        <ul id="class1-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+        <ul id="class1-nav" class="nav-content " data-bs-parent="#sidebar-nav">
           <li>
             <a href="lms-t-subject.html">
               <i class="bi bi-circle"></i><span>정보</span>
@@ -85,7 +83,7 @@
             </a>
           </li>
           <li>
-            <a href="lms-t-board.html">
+            <a href="lms-t-board.html" class="active">
               <i class="bi bi-circle"></i><span>공지</span>
             </a>
           </li>
@@ -171,7 +169,7 @@
       <hr>
 
       <li class="nav-item">
-        <a class="nav-link" href="lms-t-profile.html">
+        <a class="nav-link collapsed" href="lms-t-profile.html">
           <i class="bi bi-person"></i>
           <span>마이페이지</span>
         </a>
@@ -189,141 +187,66 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>마이페이지</h1>
-    </div><!-- End Page Title -->
-
-    <section class="section profile">
+    <section class="section dashboard">
       <div class="row">
-        <div class="col">
+        <!-- Reports -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-4" style="color: black;">공지 수정</h5>
+            <div class="d-flex flex-column">
+              <form action="">
+              <div class="d-flex mb-1 mt-3 ps-3 pe-3">
+                <input type="text" class="mb-3 mt-1 form-control" value="수업 공지사항 입니다.">
+              </div>
+                <div class="col-12 p-3 border-bottom border-top">
+                  <div>
+                    <textarea id="board_content" name="content" cols="175" rows="10" class="form-control" style="resize: none;">
+안녕하세요, DW아카데미학원입니다.
+2023년 8월에 개강하는 과목을 안내해 드립니다.
+                      
+앞으로의 개강 일정은 공식 홈페이지 [학과 및 모집 안내]←클릭 또는 HRD-Net←클릭 에서 가장 먼저 알아보실 수 있습니다.
+[기업프로젝트] 데이터시각화 UI 개발자 트랙
+프론트엔드 전문 실무기술을 배워 데이터시각화 기술을 통해 기업 과제를 풀어내고 포트폴리오에 녹여내어 취업하는 과정입니다.
+기업과 연계되어 있어 기업이 원하는 기술이 적용된 포폴 제작이 가능합니다.
 
-          <div class="card">
-            <div class="card-body pt-3">
-              <!-- Bordered Tabs -->
-              <ul class="nav nav-tabs nav-tabs-bordered">
-                <li class="nav-item">
-                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-edit">개인정보수정</button>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">비밀번호수정</button>
-                </li>
-              </ul>
-              <div class="tab-content pt-2">
+실무 팀프로젝트(과제) 내용
+1. 코로나 현황 모리터링 시스템 UI 개발
+2. 스마트팩토리 통합 관제 모니터링 시스템 UI 개발
 
-                <div class="tab-pane fade show active profile-edit pt-3" id="profile-edit">
-                  
-                  <!-- Profile Edit Form -->
-                  <form>
-                    <div class="row mb-3">
-                      <label for="yourName" class="col-md-4 col-lg-3 col-form-label" style="color: black;">이름</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="name" type="text" class="form-control" id="yourName" value="Kevin Anderson" disabled>
-                      </div>
-                    </div>
+교육비 :8,908,380원 전액 지원 (자비부담 0원)
+교재비: 전액 무료 지원
+훈련수당: 매달 최대 81만 6천 원 차등 지급(식비+교통비)
+훈련기간: 2023.08.28. - 2024.02.21.
+훈련시간: 09:00 - 17:30
+모집인원: 선착순 30명
 
-                    <div class="row mb-3">
-                      <label for="yourUsername" class="col-md-4 col-lg-3 col-form-label" style="color: black;">아이디</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="id" type="text" class="form-control" id="yourId" value="kwvin" disabled>
-                      </div>
-                    </div>
+신청안내: 고용센터에서 국민내일배움카드를 발급받은 후 온라인 신청←클릭
+교육내용: 교육 안내 페이지 이동←클릭
 
-                    <div class="row mb-3">
-                      <label for="yourBirth" class="col-md-4 col-lg-3 col-form-label" style="color: black;">생년월일</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="birth" type="text" class="form-control" id="yourBirth" value="1999.04.30" disabled>
-                      </div>
-                    </div>
 
-                    <div class="row mb-3">
-                      <label for="yourDept" class="col-md-4 col-lg-3 col-form-label" style="color: black;">부서</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="dept" type="text" class="form-control" id="yourDept" value="교육팀" disabled>
-                      </div>
-                    </div>
-                    
-                    <div class="row mb-3">
-                      <label for="yourPosition" class="col-md-4 col-lg-3 col-form-label" style="color: black;">직급</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="position" type="text" class="form-control" id="yourPosition" value="팀원/팀장" disabled>
-                      </div>
-                    </div>
+교육 관련 문의는 042-222-2402로 전화주시면 친절히 안내해 드리겠습니다.
 
-                    <div class="row mb-3">
-                      <label for="yourPhoneNumber" class="col-md-4 col-lg-3 col-form-label" style="color: black;">연락처</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="phonenumber" type="text" class="form-control" id="yourPhoneNumber" value="010-1234-5934">
-                      </div>
-                    </div>
 
-                    <div class="row mb-3">
-                      <label for="yourAddress" class="col-md-4 col-lg-3 col-form-label" style="color: black;">주소</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="address" type="text" class="form-control" id="yourAddress" value="대전광역시 중구 중앙로121번길 20 (선화동 41) 5층">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="yourEmail" class="col-md-4 col-lg-3 col-form-label" style="color: black;">이메일</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="email" type="email" class="form-control" id="yourEmail" value="k.anderson@example.com">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="yourRemark" class="col-md-4 col-lg-3 col-form-label" style="color: black;">나의 한마디</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="remark" type="text" class="form-control" id="yourRemark" value="Lorem ipsum dolor sit amet.">
-                      </div>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-primary">수정</button>
-                    </div>
-                  </form><!-- End Profile Edit Form -->
-
+DW아카데미학원은 훈련생들이 전문가로 인정받고, 대우받고, 쓰임받고, 사랑받도록 늘 정성과 사랑으로 최상의 교육을 하겠습니다.
+JAVA라 IT개발자의 길, DW아카데미학원
+                    </textarea>
+                  </div>
+                  <div class="col-12 ps-3 p-2 border d-flex mt-3">
+                    <div class="me-4 border-end pe-3 d-flex align-items-center"><span class="fw-bold">첨부파일</span></div>
+                    <div><a href="" class="link-dark"><i class="ri-add-box-line fw-bold fs-4"></i></a></div>
+                  </div>
                 </div>
-                
-                <div class="tab-pane fade pt-3" id="profile-change-password">
-                  <!-- Change Password Form -->
-                  <form>
-
-                    <div class="row mb-3">
-                      <label for="yourPassword" class="col-md-4 col-lg-3 col-form-label">현재 비밀번호</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="password" type="password" class="form-control" id="yourPassword">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">새 비밀번호</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="newpassword" type="password" class="form-control" id="newPassword">
-                      </div>
-                    </div>
-
-                    <div class="row mb-3">
-                      <label for="newPassword2" class="col-md-4 col-lg-3 col-form-label">새 비밀번호 확인</label>
-                      <div class="col-md-8 col-lg-9">
-                        <input name="newpassword" type="password" class="form-control" id="newPassword2">
-                      </div>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-primary">비밀번호 변경</button>
-                    </div>
-                  </form><!-- End Change Password Form -->
-
+                <div class="d-flex mt-3 justify-content-center gap-2">
+                  <button type="submit" class="btn btn-primary">수정</button>
+                  <button class="btn btn-danger">삭제</button>
+                  <button type="button" class="btn btn-secondary" onclick="location.href='lms-t-board.html';">취소</button>
                 </div>
-
-              </div><!-- End Bordered Tabs -->
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -354,7 +277,6 @@
 
   <!-- Template Main JS File -->
   <script src="../lms_assets/js/main.js"></script>
-  <script src="../js/attend_select.js"></script>
 
 </body>
 
