@@ -81,53 +81,73 @@
     </div><!-- End Breadcrumbs -->
 
       <div class="p-5">
-        <h5 class="card-title mb-3">입학 상담</h5>
+        <h5 class="card-title mb-3 fw-bold">입학 상담 등록</h5>
 
         <form action="" class="d-flex flex-column">
-          <table class="table datatable border">
+          <table class="table table-border">
             <tr>
-              <th>이름</th>
-              <td><input type="text" name="name" class="form-control" id="yourName" required></td>
-            </tr>
-            <tr>
-              <th>나이</th>
-              <td><input type="text" name="age" class="form-control" id="yourAge" required></td>
-            </tr>
-            <tr>
-              <th>연락처</th>
-              <td><input type="text" name="phonenumber" class="form-control" id="yourPhoneNumber" required></td>
-            </tr>
-            <tr>
-              <th>최종학력</th>
               <td>
-                <input type="radio" value="middle" class="m-1" name="school">중졸
-                <input type="radio" value="high" class="m-1" name="school">고졸
-                <input type="radio" value="college" class="m-1" name="school">전문대졸
-                <input type="radio" value="univ" class="m-1" name="school">대졸
-                <input type="radio" value="grad" class="m-1" name="school">대학원졸
+                <label for="yourName" class="form-label fw-bold">이름</label>
+                <input type="text" name="name" class="form-control" id="yourName" value="유세나" required>
               </td>
             </tr>
             <tr>
-              <th>수강희망과목</th>
               <td>
-                <select name="" id="">
-                  <option value="class1">클래스1</option>
-                  <option value="class2">클래스2</option>
+                <label for="yourAge" class="form-label fw-bold">나이</label>
+                <input type="text" name="age" class="form-control" id="yourAge" value="22" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="yourPhoneNumber" class="form-label fw-bold">연락처</label>
+                <input type="text" name="phonenumber" class="form-control" id="yourPhoneNumber" value="010-1234-5689" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="school" class="form-label fw-bold">최종학력</label>
+                <select id="school" name="school" class="form-select" aria-label="Default select example">
+                  <option selected>최종학력 선택</option>
+                  <option value="1">중졸</option>
+                  <option value="2" selected>고졸</option>
+                  <option value="3">초대졸</option>
+                  <option value="4">대졸</option>
+                  <option value="5">대학원졸</option>
                 </select>
               </td>
             </tr>
             <tr>
-              <th>제목</th>
-              <td><input type="text" name="title" class="form-control" id="title" required></td>
+              <td>
+                <label for="myClass" class="form-label fw-bold">수강희망과목</label>
+                <select id="myClass" name="myClass" class="form-select" aria-label="Default select example">
+                  <option selected>수강희망과목 선택</option>
+                  <option value="1">디지털콘텐츠 UI/UX 디자인</option>
+                  <option value="2">데이터시각화 UI 개발</option>
+                  <option value="3" selected>메타버스 에듀테크 개발</option>
+                  <option value="4">스마트웹 & 콘텐츠 개발</option>
+                  <option value="5">front-end 디지털 디자인</option>
+                  <option value="6">스마트 UI/UX 디지털 디자인</option>
+                </select>
+              </td>
             </tr>
             <tr>
-              <th>내용</th>
               <td>
-                <textarea name="content" class="" style="resize: none;" cols="100" rows="15"></textarea>
+                <label for="title" class="form-label fw-bold">제목</label>
+                <input type="text" name="title" class="form-control" id="title" value="교육상담" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="admission_content" class="form-label fw-bold">내용</label>
+                <textarea id="admission_content" name="admission_content" class="form-control" style="resize: none;" cols="100" rows="15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione quasi aspernatur ipsa sit placeat quo enim facere! Est, ipsam dicta. Autem quibusdam sunt eos voluptas sint consequuntur incidunt omnis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ducimus voluptates ab a harum blanditiis illo, voluptas quibusdam ipsam modi illum at aspernatur eius optio eveniet reprehenderit, nulla inventore ad. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis commodi delectus et illum quod culpa, ipsa deserunt, quas minus accusantium molestias! Cumque velit amet quod minima suscipit dolorem exercitationem sint? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic enim ab obcaecati perspiciatis! Maiores possimus quis corrupti magnam cupiditate, minus eius repellat tempore maxime error in delectus, veniam nostrum natus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus nobis dolores tempore qui perspiciatis omnis! Aliquid, nisi autem voluptatibus sapiente cum facilis rerum veniam eaque similique id, voluptate, eligendi itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores tempora, ut dolores impedit voluptates molestias quos voluptatem fuga fugiat sequi, ea consequuntur. Et aliquam, deserunt non nostrum minima necessitatibus tempore?</textarea>
               </td>
             </tr>
           </table>
-          <input type="submit" class="btn btn-primary m-auto" value="등록">
+          <div class="d-flex gap-1 m-auto">
+            <input type="submit" class="btn btn-primary" value="수정">
+            <button type="button" class="btn btn-danger">삭제</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='admission-board.html';">취소</button>
+          </div>
         </form>
           
       </div>

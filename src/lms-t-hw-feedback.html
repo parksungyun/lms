@@ -193,25 +193,138 @@
           <div class="d-flex mb-1 mt-3 justify-content-center">
             <h4 class="fw-bold">피라미드 만들기</h4>
           </div>
-          <table class="table table-border mt-4">
+
+          <table class="table table-borderless border-top border-bottom mt-4">
             <thead>
               <tr>
-                <th class="col-1 text-center">No.</th>
-                <th class="col-2 text-center">학생이름</th>
-                <th class="col-2 text-center">내용</th>
-                <th class="col-3 text-center">첨부파일</th>
-                <th class="col-2 text-center">제출시간</th>
-                <th class="col-2 text-center">채점</th>
+                <th class="col-3 pb-0 text-center">전체</th>
+                <th class="col-3 pb-0 text-center">제출</th>
+                <th class="col-3 pb-0 text-center">미제출</th>
+                <th class="col-3 pb-0 text-center">채점대기</th>
               </tr>
             </thead>
             <tbody>
               <tr>
+                <td class="text-center">30</td>
+                <td class="text-center">25</td>
+                <td class="text-center">5</td>
+                <td class="text-center">20</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="table table-border mt-4 table-hover">
+            <thead>
+              <tr>
+                <th class="text-center">No.</th>
+                <th class="col-1 text-center">학생이름</th>
+                <th class="">내용</th>
+                <th class="col-2 text-center">첨부파일</th>
+                <th class="col-1 text-center">제출시간</th>
+                <th class="col-1 text-center">채점현황</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr data-bs-toggle="collapse" data-bs-target="#accordion-1" class="clickable">
                 <td class="text-center">1</td>
                 <td class="text-center">가나다</td>
-                <td class="text-center">1999.01.01</td>
-                <td class="text-center">010-1234-4678</td>
-                <td class="text-center">5</td>
+                <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</td>
+                <td class="text-center">가나다_과제1.zip</td>
+                <td class="text-center">2023.09.01.13:17:02</td>
+                <td class="text-center"><span class="badge bg-success">채점완료</span></td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <div id="accordion-1" class="collapse">
+                    <div class="d-flex flex-column">
+                      <div class="border rounded mb-1">
+                        <div class="ps-2 pt-2 border-bottom">
+                          <h6 class="fw-bold">90</h6>
+                        </div>
+                        <div class="p-2">
+                          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</span>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-primary m-auto">수정</button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr data-bs-toggle="collapse" data-bs-target="#accordion-2" class="clickable">
+                <td class="text-center">2</td>
+                <td class="text-center">가나다</td>
+                <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</td>
+                <td class="text-center">가나다_과제1.zip</td>
+                <td class="text-center">2023.09.01.13:17:02</td>
+                <td class="text-center"><span class="badge bg-success">채점완료</span></td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <div id="accordion-2" class="collapse">
+                    <form action="" class="d-flex flex-column">
+                      <input type="number" class="form-control mb-1" placeholder="점수" value="90">
+                      <textarea id="feedback_content" name="content" class="form-control mb-1" style="resize: none;" placeholder="내용">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</textarea>
+                      <button type="submit" class="btn btn-primary m-auto">등록</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              <tr data-bs-toggle="collapse" data-bs-target="#accordion-3" class="clickable">
                 <td class="text-center">3</td>
+                <td class="text-center">가나다</td>
+                <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</td>
+                <td class="text-center">가나다_과제1.zip</td>
+                <td class="text-center">2023.09.01.13:17:02</td>
+                <td class="text-center"><span class="badge bg-secondary">채점대기</span></td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <div id="accordion-3" class="collapse">
+                    <form action="" class="d-flex flex-column">
+                      <input type="number" class="form-control mb-1" placeholder="점수">
+                      <textarea id="feedback_content" name="content" class="form-control mb-1" style="resize: none;" placeholder="내용"></textarea>
+                      <button type="submit" class="btn btn-primary m-auto">등록</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              <tr data-bs-toggle="collapse" data-bs-target="#accordion-4" class="clickable">
+                <td class="text-center">4</td>
+                <td class="text-center">가나다</td>
+                <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</td>
+                <td class="text-center">가나다_과제1.zip</td>
+                <td class="text-center text-danger">2023.09.02.00:17:02</td>
+                <td class="text-center"><span class="badge bg-secondary">채점대기</span></td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <div id="accordion-4" class="collapse">
+                    <form action="" class="d-flex flex-column">
+                      <input type="number" class="form-control mb-1" placeholder="점수">
+                      <textarea id="feedback_content" name="content" class="form-control mb-1" style="resize: none;" placeholder="내용"></textarea>
+                      <button type="submit" class="btn btn-primary m-auto">등록</button>
+                    </form>
+                  </div>
+                </td>
+              </tr>
+              <tr data-bs-toggle="collapse" data-bs-target="#accordion-5" class="clickable">
+                <td class="text-center">5</td>
+                <td class="text-center">가나다</td>
+                <td class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, aperiam!</td>
+                <td class="text-center">가나다_과제1.zip</td>
+                <td class="text-center text-danger">2023.09.02.00:25:42</td>
+                <td class="text-center"><span class="badge bg-secondary">채점대기</span></td>
+              </tr>
+              <tr>
+                <td colspan="6">
+                  <div id="accordion-5" class="collapse">
+                    <form action="" class="d-flex flex-column">
+                      <input type="number" class="form-control mb-1" placeholder="점수">
+                      <textarea id="feedback_content" name="content" class="form-control mb-1" style="resize: none;" placeholder="내용"></textarea>
+                      <button type="submit" class="btn btn-primary m-auto">등록</button>
+                    </form>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
