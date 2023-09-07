@@ -312,55 +312,118 @@
                       </tr>
                     </tbody>
                   </table>
+
+                  <div class="mt-4">
+                    <form action="" class="d-flex gap-2">
+                      <input type="date" class="form-control-sm border-1" name="startDate" id="startDate">
+                      <span class="pt-1">~</span>
+                      <input type="date" class="form-control-sm border-1" name="endDate" id="endDate">
+                      <button type="submit" class="btn btn-primary pt-0 pb-0">검색</button>
+                    </form>
+                  </div>
                   
-                  <table class="table table-border">
+                  <table class="table table-border mt-3">
                     <thead>
                       <tr>
-                        <th class="col-1 text-center">날짜</th>
-                        <th class="col-1 text-center">출결여부</th>
+                        <th class="text-center">No.</th>
+                        <th class="col-2 text-center">날짜</th>
+                        <th class="col-2 text-center">출결여부</th>
                         <th class="col-1 text-center">출결코드</th>
                         <th class="col-5 text-center">결석사유</th>
-                        <th class="col-1 text-center">출결사항 승인</th>
+                        <th class="col-2 text-center">출결사항 승인</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="text-center">2023-09-05</td>
-                        <td class="text-center"><span class="badge bg-primary w-100">출석</span></td>
+                        <td class="text-center">1</td>
+                        <td class="text-center">2023-09-15</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
                         <td class="text-center">00</td>
                         <td class="text-center"></td>
-                        <td class="text-center"><span class="badge bg-success w-100">승인</span></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
                       </tr>
                       <tr>
-                        <td class="text-center">2023-09-05</td>
-                        <td class="text-center"><span class="badge bg-primary w-100">출석</span></td>
+                        <td class="text-center">2</td>
+                        <td class="text-center">2023-09-14</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
                         <td class="text-center">00</td>
                         <td class="text-center"></td>
-                        <td class="text-center"><span class="badge bg-success w-100">승인</span></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
                       </tr>
                       <tr>
-                        <td class="text-center">2023-09-05</td>
-                        <td class="text-center"><span class="badge bg-warning w-100">결석</span></td>
+                        <td class="text-center">3</td>
+                        <td class="text-center">2023-09-13</td>
+                        <td class="text-center"><span class="badge bg-warning w-75">결석</span></td>
                         <td class="text-center">14</td>
                         <td class="text-center">휴가</td>
-                        <td class="text-center"><span class="badge bg-success w-100">승인</span></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
                       </tr>
                       <tr>
-                        <td class="text-center">2023-09-05</td>
-                        <td class="text-center"><span class="badge bg-danger w-100">결석</span></td>
-                        <td class="text-center">01</td>
-                        <td class="text-center">예비군</td>
-                        <td class="text-center"><span class="badge bg-secondary w-100">승인 대기</span></td>
-                      </tr>
-                      <tr>
-                        <td class="text-center">2023-09-05</td>
-                        <td class="text-center"><span class="badge bg-danger w-100">결석</span></td>
+                        <td class="text-center">4</td>
+                        <td class="text-center">2023-09-12</td>
+                        <td class="text-center"><span class="badge bg-danger w-75">결석</span></td>
                         <td class="text-center">99</td>
-                        <td class="text-center">무단</td>
-                        <td class="text-center"><span class="badge bg-secondary w-100">승인 대기</span></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-secondary w-75">승인 대기</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">5</td>
+                        <td class="text-center">2023-09-11</td>
+                        <td class="text-center"><span class="badge bg-danger w-75">결석</span></td>
+                        <td class="text-center">99</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-secondary w-75">승인 대기</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">6</td>
+                        <td class="text-center">2023-09-08</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
+                        <td class="text-center">00</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">7</td>
+                        <td class="text-center">2023-09-07</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
+                        <td class="text-center">00</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">8</td>
+                        <td class="text-center">2023-09-06</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
+                        <td class="text-center">00</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">9</td>
+                        <td class="text-center">2023-09-05</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
+                        <td class="text-center">00</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">10</td>
+                        <td class="text-center">2023-09-04</td>
+                        <td class="text-center"><span class="badge bg-primary w-75">출석</span></td>
+                        <td class="text-center">00</td>
+                        <td class="text-center"></td>
+                        <td class="text-center"><span class="badge bg-success w-75">승인</span></td>
                       </tr>
                     </tbody>
                   </table>
+
+                  <div class="d-flex justify-content-center gap-1">
+                    <button type="button" class="btn btn-primary"><i class="ri-arrow-drop-left-line"></i></button>
+                    <button type="button" class="btn btn-primary">1</button>
+                    <button type="button" class="btn btn-primary">2</button>
+                    <button type="button" class="btn btn-primary">3</button>
+                    <button type="button" class="btn btn-primary"><i class="ri-arrow-drop-right-line"></i></button>
+                  </div>
                 </div>
 
                 <div class="tab-pane fade" id="profile-review">
