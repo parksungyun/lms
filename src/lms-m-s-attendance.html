@@ -206,12 +206,42 @@
             </tbody>
           </table>
 
-          <div class="mt-4">
-            <form action="" class="d-flex gap-2">
-              <input type="date" class="form-control-sm border-1" name="startDate" id="startDate">
-              <span class="pt-1">~</span>
-              <input type="date" class="form-control-sm border-1" name="endDate" id="endDate">
-              <button type="submit" class="btn btn-primary pt-0 pb-0">검색</button>
+          <div class="mt-4 d-flex justify-content-center">
+            <form action="" class="d-flex gap-3">
+              <div class="d-flex gap-2 align-items-center me-2 mb-2">
+                <label class="form-label fw-bold">출결코드</label>
+                <div class="">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>출결코드 선택</option>
+                    <option value="0">00 출석</option>
+                    <option value="1">01 예비군, 민방위 훈련</option>
+                    <option value="2">02 징병검사</option>
+                    <option value="3">03 취업·훈련관련 시험(자격증, 면허증 등)</option>
+                    <option value="4">04 입사시험</option>
+                    <option value="5">05 기능경기대회 출전</option>
+                    <option value="6">06 선거권(기타 공인권) 행사</option>
+                    <option value="7">07 결혼(본인)</option>
+                    <option value="8">08 결혼(자녀)</option>
+                    <option value="9">09 사망(배우자, 본인 및 배우자의 부모)</option>
+                    <option value="10">10 사망(본인 및 배우자의 조부모, 외조부모)</option>
+                    <option value="11">11 사망(자녀와 그 자녀의 배우자)</option>
+                    <option value="12">12 사망(본인 및 배우자의 형제자매)</option>
+                    <option value="13">13 출산(배우자)</option>
+                    <option value="14">14 휴가</option>
+                    <option value="15">15 질병·입원(본인)</option>
+                    <option value="99">99 미승인/미사유 결석</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex gap-2 align-items-center mb-2">
+                <label class="form-label fw-bold">기간</label>
+                <div class="d-flex gap-2 align-items-center">
+                  <input type="date" class="form-control" name="startDate" id="startDate">
+                  <span>~</span>
+                  <input type="date" class="form-control" name="endDate" id="endDate">
+                </div>
+                <button type="submit" class="btn btn-primary">검색</button>
+              </div>
             </form>
           </div>
 
