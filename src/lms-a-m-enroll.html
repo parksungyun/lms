@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LMS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../img/logo/y_favicon.png" rel="icon">
+  <link href="../lms_assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../lms_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lms_assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../lms_assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../lms_assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="../lms_assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="../lms_assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../lms_assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../lms_assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="lms-a-index.html" class="d-flex align-items-center">
+        <img src="../img/logo/y_logo2.png" alt="logo" style="width: 75%;">
+      </a>
+    </div>
+    
+    <div class="ms-auto d-flex align-items-center">
+      <span class="d-none d-md-block fw-bold" style="margin-right: 30px;">황기현</span>
+    </div><!-- End Icons Navigation -->
+
+
+  </header><!-- End Header -->
+
+  <main id="main" class="main" style="margin-left: 0;">
+    <div class="col-12">
+      <div class="card recent-sales overflow-auto">
+        <div class="card-body">
+          <h5 class="card-title fw-bold fs-4 mb-0 pb-1">매니저 등록</h5>
+          <hr class="mt-1 mb-1">
+          <form class="mt-3">
+            <div class="row mb-3">
+              <label for="yourName" class="col-md-4 col-lg-3 col-form-label" style="color: black;">이름</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="name" type="text" class="form-control" id="yourName" value="Kevin Anderson" disabled>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="yourUsername" class="col-md-4 col-lg-3 col-form-label" style="color: black;">아이디</label>
+              <div class="d-flex col-lg-9 gap-3">
+                <input name="id" type="text" class="form-control" id="yourId" value="kwvin" disabled>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="yourBirth" class="col-md-4 col-lg-3 col-form-label" style="color: black;">생년월일</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="birth" type="text" class="form-control" id="yourBirth" value="1999.04.30" disabled>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="yourDept" class="col-md-4 col-lg-3 col-form-label" style="color: black;">부서</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="dept" type="text" class="form-control" id="yourDept" value="행정팀" disabled>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="yourPhoneNumber" class="col-md-4 col-lg-3 col-form-label" style="color: black;">연락처</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="phonenumber" type="text" class="form-control" id="yourPhoneNumber" value="010-1234-5934" disabled>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="yourAddress" class="col-md-4 col-lg-3 col-form-label" style="color: black;">주소</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="address" type="text" class="form-control" id="yourAddress" value="대전광역시 중구 중앙로121번길 20 (선화동 41) 5층" disabled>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="yourEmail" class="col-md-4 col-lg-3 col-form-label" style="color: black;">이메일</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="email" type="email" class="form-control" id="yourEmail" value="k.anderson@example.com" disabled>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="yourPhoto" class="col-md-4 col-lg-3 col-form-label" style="color: black;">사진</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="photo" class="form-control" type="file" id="yourPhoto">
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="yourPosition" class="col-md-4 col-lg-3 col-form-label" style="color: black;">직급</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="position" type="text" class="form-control" id="yourPosition" placeholder="주임/대리/과장/부장">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="yourRemark" class="col-md-4 col-lg-3 col-form-label" style="color: black;">나의 한마디</label>
+              <div class="col-md-8 col-lg-9">
+                <input name="remark" type="text" class="form-control" id="yourRemark" placeholder="웹사이트 교육팀 소개페이지에 표시되는 내용입니다.">
+              </div>
+            </div>
+                        
+            <div class="row mb-3">
+              <label for="yourAuth" class="col-md-4 col-lg-3 col-form-label" style="color: black;">권한</label>
+              <div class="col-md-8 col-lg-9">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="yourAuth">
+                      <label class="form-check-label" for="yourAuth">
+                        행정팀 관리권한
+                      </label>
+                    </div>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">등록</button>
+              <button type="button" class="btn btn-secondary" onclick="location.href='lms-a-m-setting.html';">취소</button>
+            </div>
+          </form><!-- End Profile Edit Form -->
+        </div>
+      </div>
+    </div>
+  </main><!-- End #main -->
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer" style="margin-left: 0;">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../lms_assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="../lms_assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lms_assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="../lms_assets/vendor/echarts/echarts.min.js"></script>
+  <script src="../lms_assets/vendor/quill/quill.min.js"></script>
+  <script src="../lms_assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="../lms_assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="../lms_assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../lms_assets/js/main.js"></script>
+
+</body>
+
+</html>
