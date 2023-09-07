@@ -61,9 +61,9 @@
       <div class="card recent-sales overflow-auto">
         <div class="card-body">
           <div class="d-flex justify-content-between align-items-center">
-            <h5 class="card-title fw-bold fs-4 mb-0 pb-1 ">교육팀 관리</h5>
+            <h5 class="card-title fw-bold fs-4 mb-0 pb-1 ">학생 조회</h5>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#basicModal2">
-              강사 등록
+              학생 등록
               </button>
               <div class="modal fade" id="basicModal2" tabindex="-1">
                 <div class="modal-dialog">
@@ -74,7 +74,7 @@
                     </div>
                     <form action="">
                       <div class="modal-body text-center">
-                        <label for="userId" class="col-form-label" style="color: black;">강사로 등록할 사용자 아이디를 입력해주세요</label>
+                        <label for="userId" class="col-form-label" style="color: black;">등록할 사용자 아이디를 입력해주세요</label>
                         <div class="d-flex gap-3 align-items-center justify-content-center">
                           <div>
                             <input name="id" type="text" class="form-control" id="userId" placeholder="kwvin">
@@ -82,10 +82,11 @@
                           <button type="submit" class="btn btn-primary">검색</button>
                         </div>
                         <div class=""><span style="color: red; font-size: small;">없는 아이디 입니다</span></div>
+                        <div class=""><span style="font-size: small;">가나다를 등록하시겠습니까?</span></div>
                       </div>
                     </form>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" onclick="location.href='lms-a-t-enroll.html';">등록</button>
+                        <button type="button" class="btn btn-primary">등록</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
                       </div>
                   </div>
@@ -94,69 +95,79 @@
           </div>
           <hr class="mt-1 mb-1">
         
+          <table class="table table-borderless border-top border-bottom mt-4">
+            <thead>
+              <tr>
+              <th class="col-3 pb-0 text-center">클래스명</th>
+              <th class="col-3 pb-0 text-center">훈련 기간</th>
+              <th class="col-2 pb-0 text-center">모집 기간</th>
+              <th class="col-2 pb-0 text-center">정원</th>
+              <th class="col-2 pb-0 text-center">현재인원</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="text-center">스마트 UI/UX 디지털 디자인 2회차</td>
+                <td class="text-center">2023.06.07 ~ 2023.12.29</td>
+                <td class="text-center">2023.05.01 ~ 2023.05.31</td>
+                <td class="text-center">30</td>
+                <td class="text-center">5</td>
+              </tr>
+            </tbody>
+          </table>
+        
           <table class="table table-border mt-4">
             <thead>
               <tr>
-                <th class="text-center">No.</th>
-                <th class="col-1 text-center">강사이름</th>
+                <th class="col-1 text-center">No.</th>
+                <th class="col-2 text-center">학생이름</th>
+                <th class="col-2 text-center">아이디</th>
                 <th class="col-2 text-center">생년월일</th>
-                <th class="col-2 text-center">연락처</th>
-                <th class="col-3 text-center">이메일</th>
-                <th class="col-2 text-center">포지션</th>
-                <th class="col-1 text-center">담당 과목 수</th>
-                <th class="ms-auto text-center pe-0">상세정보</th>
+                <th class="col-3 text-center">연락처</th>
+                <th class="col-2 text-center">이메일</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="text-center">1</td>
                 <td class="text-center">가나다</td>
+                <td class="text-center">abc123</td>
                 <td class="text-center">1999.01.01</td>
                 <td class="text-center">010-1234-4678</td>
-                <td class="text-center">abcde1234@yyacademy.co.kr</td>
-                <td class="text-center">Web Development</td>
-                <td class="text-center">5</td>
-                <td class="pe-0 text-center"><button class="btn btn-secondary pb-0 pt-0" onclick="location.href='lms-a-t-detail.html';">상세정보</button></td>
+                <td class="text-center">abc123@naver.com</td>
               </tr>
               <tr>
                 <td class="text-center">2</td>
-                <td class="text-center">고나다</td>
-                <td class="text-center">2000.01.01</td>
-                <td class="text-center">010-1234-4541</td>
-                <td class="text-center">abcsads1234@yyacademy.co.kr</td>
-                <td class="text-center">Web Development</td>
-                <td class="text-center">3</td>
-                <td class="pe-0 text-center"><button class="btn btn-secondary pb-0 pt-0" onclick="location.href='lms-a-t-detail.html';">상세정보</button></td>
+                <td class="text-center">가와다</td>
+                <td class="text-center">bcd874</td>
+                <td class="text-center">1989.01.01</td>
+                <td class="text-center">010-1234-4488</td>
+                <td class="text-center">bcd185@naver.com</td>
               </tr>
               <tr>
                 <td class="text-center">3</td>
-                <td class="text-center">가노다</td>
-                <td class="text-center">1997.01.01</td>
-                <td class="text-center">010-1234-7828</td>
-                <td class="text-center">abaae1234@yyacademy.co.kr</td>
-                <td class="text-center">Design</td>
-                <td class="text-center">6</td>
-                <td class="pe-0 text-center"><button class="btn btn-secondary pb-0 pt-0" onclick="location.href='lms-a-t-detail.html';">상세정보</button></td>
+                <td class="text-center">나도다</td>
+                <td class="text-center">me2</td>
+                <td class="text-center">1970.01.01</td>
+                <td class="text-center">010-1484-4488</td>
+                <td class="text-center">me2@naver.com</td>
               </tr>
               <tr>
                 <td class="text-center">4</td>
-                <td class="text-center">가나대</td>
-                <td class="text-center">1989.01.01</td>
-                <td class="text-center">010-1234-4478</td>
-                <td class="text-center">abcde2134@yyacademy.co.kr</td>
-                <td class="text-center">Design</td>
-                <td class="text-center">1</td>
-                <td class="pe-0 text-center"><button class="btn btn-secondary pb-0 pt-0" onclick="location.href='lms-a-t-detail.html';">상세정보</button></td>
+                <td class="text-center">가나저</td>
+                <td class="text-center">melose01</td>
+                <td class="text-center">1986.01.01</td>
+                <td class="text-center">010-1889-4488</td>
+                <td class="text-center">melose01@naver.com</td>
               </tr>
               <tr>
                 <td class="text-center">5</td>
-                <td class="text-center">라마다</td>
-                <td class="text-center">1982.01.01</td>
-                <td class="text-center">010-1234-4915</td>
-                <td class="text-center">agbde1234@yyacademy.co.kr</td>
-                <td class="text-center">Web Development</td>
-                <td class="text-center">0</td>
-                <td class="pe-0 text-center"><button class="btn btn-secondary pb-0 pt-0" onclick="location.href='lms-a-t-detail.html';">상세정보</button></td>
+                <td class="text-center">김더다</td>
+                <td class="text-center">duda111</td>
+                <td class="text-center">1987.01.01</td>
+                <td class="text-center">010-1234-1572</td>
+                <td class="text-center">duda111@naver.com</td>
               </tr>
             </tbody>
           </table>
